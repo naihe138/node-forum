@@ -1,0 +1,33 @@
+{
+  "name": "node-forum",
+  "version": "1.0.0",
+  "description": "node stardy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm run clear && babel src -d target --watch",
+    "compile": "npm run clear && babel src -d target",
+    "clear": "rm -rf target"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naihe138/node-forum.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongodb"
+  ],
+  "author": "naice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naihe138/node-forum/issues"
+  },
+  "homepage": "https://github.com/naihe138/node-forum#readme",
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015-node6": "^0.4.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "project-core": "^2.1.0"
+  }
+}
