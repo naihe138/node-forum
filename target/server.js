@@ -35,6 +35,9 @@ $.init.load(_path2.default.resolve(__dirname, 'init', 'mongodb.js'));
 // 初始化models
 $.init.load(_path2.default.resolve(__dirname, 'models'));
 
+// 初始化express
+$.init.load(_path2.default.resolve(__dirname, 'init', 'express.js'));
+
 // 初始化
 $.init(err => {
   if (err) {
@@ -43,11 +46,4 @@ $.init(err => {
   } else {
     console.log('inited--env==' + $.env);
   }
-
-  const user = new $.model.User({
-    name: `username${ $.utils.date('Ymd') }`,
-    password: '123456',
-    nickname: '测试用户'
-  });
-  user.save(console.log);
 });
