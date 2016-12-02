@@ -5,9 +5,9 @@
  * @date 16/12/2
  */
 
-model.exports = function (done) {
+module.exports = function (done) {
   $.router.get('/', (req, res, next) => {
-    res.end('//////');
+    res.end(`还不错哦，现在背景时间是${new Date()}`);
     done();
   });
 };

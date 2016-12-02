@@ -32,11 +32,14 @@ $.init.add(done => {
 // 初始化数据库
 $.init.load(_path2.default.resolve(__dirname, 'init', 'mongodb.js'));
 
-// 初始化models
+// 加载models
 $.init.load(_path2.default.resolve(__dirname, 'models'));
 
-// 初始化express
+// 加载express
 $.init.load(_path2.default.resolve(__dirname, 'init', 'express.js'));
+
+// 加载routers
+$.init.load(_path2.default.resolve(__dirname, 'routes'));
 
 // 初始化
 $.init(err => {
