@@ -7,7 +7,7 @@
 
 module.exports = function (done) {
   $.router.get('/', (req, res, next) => {
-    res.end(`还不错哦，现在背景时间是${new Date()}`);
+    res.end('//////');
     done();
   });
 };

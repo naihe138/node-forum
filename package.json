@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm run clear && babel src -d target --watch",
     "compile": "npm run clear && babel src -d target",
-    "clear": "rm -rf target"
+    "clear": "rm -rf target",
+    "dev": "export NODE_ENV=dev && export DEBUG='my:*' && node target/server.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "babel-cli": "^6.18.0",
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-preset-stage-0": "^6.16.0",
+    "debug": "^2.3.3",
     "mongoose": "^4.7.1",
     "project-core": "^2.1.0",
     "serve-static": "^1.11.1"
