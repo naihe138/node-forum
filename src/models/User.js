@@ -15,10 +15,17 @@ module.exports = function(done){
       type: String,
       unique: true
     },
+    email: {
+      type: String,
+      unique: true
+    },
     password: {
       type: String
     },
     nickname: {
+      type: String
+    },
+    about: {
       type: String
     }
   });
